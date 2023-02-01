@@ -37,13 +37,17 @@ aside {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 3rem;
 }
 
 .logo {
     font-weight: 400;
     font-size: 1.3rem;
+}
+
+footer {
+    height: 10%;
 }
 
 .text-footer, .text-footer > a {
@@ -114,6 +118,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: .25rem;
+    height: 80%;
 }
 
 .btn-menu {

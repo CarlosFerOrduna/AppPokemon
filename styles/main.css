@@ -34,7 +34,7 @@ aside {
     color: var(--color-second);
     position: sticky;
     top: 0;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -44,10 +44,6 @@ aside {
 .logo {
     font-weight: 400;
     font-size: 1.3rem;
-}
-
-footer {
-    height: 10%;
 }
 
 .text-footer, .text-footer > a {
@@ -118,7 +114,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: .25rem;
-    height: 80%;
 }
 
 .btn-menu {

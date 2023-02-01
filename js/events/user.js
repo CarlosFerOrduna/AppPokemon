@@ -33,7 +33,7 @@ const register = () => {
     const password = document.querySelector('#password').value
     const confirmPasword = document.querySelector('#confirms-password').value
 
-    if (password === confirmPasword && firstName === null && lastName === null && email === null && password === null && confirmPasword === null) {
+    if (password === confirmPasword && firstName && lastName && email && password && confirmPasword) {
         const users = JSON.parse(localStorage.getItem('users'))
         const user = new User(1, firstName, lastName, email, password)
         users.push(user)

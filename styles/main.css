@@ -119,7 +119,7 @@ main {
     background-color: transparent;
     border: 0;
     color: var(--color-third);
-    font-size: .85rem;
+    font-size: .80rem;
     cursor: pointer;
     display: flex;
     align-items: center;

@@ -25,7 +25,7 @@ a {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 9fr;
     background-color: var(--color-first);
 }
 
@@ -37,7 +37,8 @@ aside {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 3rem;
 }
 
 .logo {
@@ -64,7 +65,7 @@ main {
 
 .container-pokemons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1rem;
 }
 
@@ -119,12 +120,12 @@ main {
     background-color: transparent;
     border: 0;
     color: var(--color-third);
-    font-size: .80rem;
+    font-size: 1rem;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: .2rem;
+    gap: 1.5rem;
+    padding: .4rem;
     width: 100%;
 }
 

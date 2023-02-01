@@ -9,7 +9,7 @@ const login = () => {
     if (typeof user === "object") {
         sessionStorage.setItem('user', JSON.stringify(user))
         window.location.href = './pages/home.html'
-    }else{
+    } else {
         window.location.href = './index.html'
     }
 }
@@ -33,7 +33,7 @@ const register = () => {
     const password = document.querySelector('#password').value
     const confirmPasword = document.querySelector('#confirms-password').value
 
-    if(password === confirmPasword){
+    if (password === confirmPasword) {
         const users = JSON.parse(localStorage.getItem('users'))
 
         const user = new User(1, firstName, lastName, email, password)

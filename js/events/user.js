@@ -33,15 +33,17 @@ const register = () => {
     const password = document.querySelector('#password').value
     const confirmPasword = document.querySelector('#confirms-password').value
 
-    if (password === confirmPasword) {
+    if (password === confirmPasword && firstName === null && lastName === null && email === null && password === null && confirmPasword === null) {
         const users = JSON.parse(localStorage.getItem('users'))
-
         const user = new User(1, firstName, lastName, email, password)
         users.push(user)
+        console.log(password, confirmPasword, firstName, lastName, email, password, confirmPasword)
 
         localStorage.setItem('users', JSON.stringify(users))
         sessionStorage.setItem('user', JSON.stringify(users))
-        window.location.href = './home.html'
+        window.location.href = './pages/home.html'
+    } else {
+        window.location.href = './register.html'
     }
 }
 

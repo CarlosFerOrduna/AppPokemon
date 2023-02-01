@@ -37,7 +37,7 @@ aside {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .logo {
@@ -112,14 +112,14 @@ main {
 .menu {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: .25rem;
 }
 
 .btn-menu {
     background-color: transparent;
     border: 0;
     color: var(--color-third);
-    font-size: .85rem;
+    font-size: .80rem;
     cursor: pointer;
     display: flex;
     align-items: center;

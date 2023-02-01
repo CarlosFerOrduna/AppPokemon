@@ -1,0 +1,56 @@
+[
+  {
+    "idUser": 1,
+    "firstName": "Adm",
+    "lastName": "Adm",
+    "email": "adm@adm.com",
+    "dni": "123",
+    "password": "123",
+    "isAdmin": true
+  },
+  {
+    "idUser": 2,
+    "firstName": "Car",
+    "lastName": "Ord",
+    "email": "car@ord.com",
+    "dni": "456",
+    "password": "123",
+    "isAdmin": false
+  },
+  {
+    "idUser": 3,
+    "firstName": "Fer",
+    "lastName": "Ord",
+    "email": "fer@ord.com",
+    "dni": "789",
+    "password": "123",
+    "isAdmin": false
+  },
+  {
+    "idUser": 4,
+    "firstName": "Ana",
+    "lastName": "Con",
+    "email": "ana@con.com",
+    "dni": "987",
+    "password": "123",
+    "isAdmin": false
+  },
+  {
+    "idUser": 5,
+    "firstName": "Bel",
+    "lastName": "Con",
+    "email": "bel@con.com",
+    "dni": "654",
+    "password": "123",
+    "isAdmin": false
+  },
+  {
+    "idUser": 6,
+    "firstName": "Fran",
+    "lastName": "Con",
+    "email": "fran@con.com",
+    "dni": "321",
+    "password": "123",
+    "isAdmin": false
+  }
+]

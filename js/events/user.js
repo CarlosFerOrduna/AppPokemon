@@ -8,6 +8,7 @@ const login = () => {
 
     if (typeof user === "object") {
         sessionStorage.setItem('user', JSON.stringify(user))
+        localStorage.setItem('pokedex', JSON.stringify([]))
         window.location.href = './pages/home.html'
     } else {
         window.location.href = './index.html'
@@ -41,6 +42,7 @@ const register = () => {
 
         localStorage.setItem('users', JSON.stringify(users))
         sessionStorage.setItem('user', JSON.stringify(users))
+        localStorage.setItem('pokedex', JSON.stringify([]))
         window.location.href = './pages/home.html'
     } else {
         window.location.href = './register.html'
@@ -59,3 +61,10 @@ export const reloadRegister = () => {
     }, 1000)
 }
 
+export const btnLogout = () => {
+    const btnLogout = document.querySelector('.btn-logout')
+
+    btnLogout.addEventListener('click', () => {
+        sessionStorage.setItem('user', JSON.stringify([]))
+    })
+}

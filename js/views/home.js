@@ -1,9 +1,9 @@
-export const renderPokemons = async (pokemons) => {
+export const renderPokemons = (pokemons) => {
     const containerPokemons = document.querySelector('.container-pokemons')
     if (containerPokemons) {
         containerPokemons.innerHTML = ''
 
-        await pokemons.forEach(pokemon => {
+        pokemons.forEach(pokemon => {
 
             const div = document.createElement('div')
 

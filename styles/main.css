@@ -34,11 +34,11 @@ aside {
     color: var(--color-second);
     position: sticky;
     top: 0;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .logo {
@@ -113,14 +113,12 @@ main {
 .menu {
     display: flex;
     flex-direction: column;
-    gap: .25rem;
 }
 
 .btn-menu {
     background-color: transparent;
     border: 0;
     color: var(--color-third);
-    font-size: 1rem;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -244,4 +242,25 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container-btn {
+    padding: 0 2rem 0 0;
+}
+
+.btn-logout {
+    background-color: var(--color-third);
+    color: var(--color-first);
+    padding: .3rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid var(--color-third);
+    transition: background-color 0.2s, color 0.2s;
+    font-size: .8rem;
+}
+
+.btn-logout:hover {
+    background-color: var(--color-first);
+    color: var(--color-third);
 }

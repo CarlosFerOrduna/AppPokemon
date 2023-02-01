@@ -40,14 +40,14 @@ const addPokemonPokedex = (e) => {
         pokemonsInPokedex[index].count++
 
         localStorage.setItem('pokedex', JSON.stringify(pokemonsInPokedex))
-    countPokedex()
+        countPokedex()
     } else {
         addPokemon.count = 1
 
         pokemonsInPokedex.push(addPokemon)
 
         localStorage.setItem('pokedex', JSON.stringify(pokemonsInPokedex))
-    countPokedex()
+        countPokedex()
     }
 }
 
@@ -70,4 +70,15 @@ export const countPokedex = () => {
     if (countPokemons && pokemonsInPokedex) {
         countPokemons.innerText = pokemonsInPokedex.reduce((acc, pokemon) => acc + pokemon.count, 0)
     }
+}
+
+export const reloadRenderPokemons = () => {
+    setTimeout(() => {
+        const pokemons = JSON.parse(localStorage.getItem('pokemons'))
+        if (pokemons === null) {
+            return reloadRenderPokemons()
+        } else {
+            return renderPokemons(pokemons)
+        }
+    }, 1000)
 }
